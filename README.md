@@ -1,4 +1,4 @@
 # My Awesome Manual
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+记录工作中经常用到的概念、知识以及解决方法.
 
