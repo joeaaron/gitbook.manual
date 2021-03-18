@@ -1,0 +1,19 @@
+{
+  "name": "gitbook_manual",
+  "version": "1.0.0",
+  "description": "This file file serves as your book's preface, a great place to describe your book's content and ideas.",
+  "main": "index.js",
+  "scripts": {
+     "build": "gitbook build ./ ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeaaron/gitbook.manual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeaaron/gitbook.manual/issues"
+  },
+  "homepage": "https://github.com/joeaaron/gitbook.manual#readme"
+}
