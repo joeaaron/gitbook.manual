@@ -89,6 +89,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="控件事件.html" />
+    
     
     <link rel="prev" href="VC++.html" />
     
@@ -165,6 +167,36 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.2" data-path="控件事件.html">
+            
+                <a href="控件事件.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    控件事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="开发中问题.html">
+            
+                <a href="开发中问题.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    开发中问题
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -231,6 +263,8 @@
 3.&#x6D6E;&#x70B9;(double) d = atof(str)
 // 4.CString-&gt;std::string
 std::string strExpr = CT2A(str);
+// 5.CString-&gt;bool
+bool bTest = !str.CompareNoCase(_T(&quot;true&quot;));
 </code></pre><h3 id="&#x4E8C;&#x3001;c-&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x8F6C;cstring">&#x4E8C;&#x3001;C++ &#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x8F6C;CString</h3>
 <p>&#x5728;MFC&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Format&#x65B9;&#x6CD5;&#x65B9;&#x4FBF;&#x7684;&#x5B9E;&#x73B0;int&#x3001;float&#x548C;double&#x7B49;&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;CString&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4EE5;&#x4E0B;&#x662F;CString&#x7684;Format&#x652F;&#x6301;&#x7684;&#x683C;&#x5F0F;&#x8BF4;&#x660E;&#xFF1A;</p>
 <p>%c &#x5355;&#x4E2A;&#x5B57;&#x7B26;<br>%d &#x5341;&#x8FDB;&#x5236;&#x6574;&#x6570;(int)<br>%ld &#x5341;&#x8FDB;&#x5236;&#x6574;&#x6570;(long)<br>%f &#x5341;&#x8FDB;&#x5236;&#x6D6E;&#x70B9;&#x6570;(float)<br>%lf &#x5341;&#x8FDB;&#x5236;&#x6D6E;&#x70B9;&#x6570;(double)<br>%o &#x516B;&#x8FDB;&#x5236;&#x6570;<br>%s &#x5B57;&#x7B26;&#x4E32;<br>%u &#x65E0;&#x7B26;&#x53F7;&#x5341;&#x8FDB;&#x5236;&#x6570;<br>%x &#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;</p>
@@ -244,6 +278,10 @@ str.Format(_T(&quot;%f&quot;),number);
 // 3.std::string-&gt;CString
 std::string strTest = &quot;test&quot;;
 strMfc = strTest.c_str();
+// 4.bool-&gt;CString
+bool bTest = true;
+std::string strTest = (bTest  ? &quot;true&quot; : &quot;false&quot;);
+str = strTest.c_str();
 </code></pre>
                                 
                                 </section>
@@ -271,10 +309,14 @@ strMfc = strTest.c_str();
 
             
                 
-                <a href="VC++.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: VC++开发手册">
+                <a href="VC++.html" class="navigation navigation-prev " aria-label="Previous page: VC++开发手册">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="控件事件.html" class="navigation navigation-next " aria-label="Next page: 控件事件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -283,7 +325,7 @@ strMfc = strTest.c_str();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"格式转换","level":"1.2.1","depth":2,"previous":{"title":"VC++开发手册","level":"1.2","depth":1,"path":"VC++/VC++.md","ref":"VC++/VC++.md","articles":[{"title":"格式转换","level":"1.2.1","depth":2,"path":"VC++/格式转换.md","ref":"VC++/格式转换.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["alerts","code","theme-comscore","back-to-top-button","expandable-chapters","etoc","mermaid","mermaid-gb3"],"pluginsConfig":{"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"search":{},"mermaid":{},"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"theme-comscore":{},"back-to-top-button":{},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"VC++/格式转换.md","mtime":"2021-03-18T07:06:06.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-19T05:17:02.199Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"格式转换","level":"1.2.1","depth":2,"next":{"title":"控件事件","level":"1.2.2","depth":2,"path":"VC++/控件事件.md","ref":"VC++/控件事件.md","articles":[]},"previous":{"title":"VC++开发手册","level":"1.2","depth":1,"path":"VC++/VC++.md","ref":"VC++/VC++.md","articles":[{"title":"格式转换","level":"1.2.1","depth":2,"path":"VC++/格式转换.md","ref":"VC++/格式转换.md","articles":[]},{"title":"控件事件","level":"1.2.2","depth":2,"path":"VC++/控件事件.md","ref":"VC++/控件事件.md","articles":[]},{"title":"开发中问题","level":"1.2.3","depth":2,"path":"VC++/开发中问题.md","ref":"VC++/开发中问题.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["alerts","code","theme-comscore","back-to-top-button","expandable-chapters","etoc","mermaid","mermaid-gb3"],"pluginsConfig":{"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"search":{},"mermaid":{},"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"theme-comscore":{},"back-to-top-button":{},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"VC++/格式转换.md","mtime":"2021-04-17T05:45:59.784Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-01T11:23:36.944Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
